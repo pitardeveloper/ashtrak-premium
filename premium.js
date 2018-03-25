@@ -613,4 +613,4 @@ client.on('message', message => {
 
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login('NDI3NDMwMzAxMTA3NjE3ODA0.DZkbCQ.am4BKMAhZi9JsvTPC0Fe6Hmp0H8');
