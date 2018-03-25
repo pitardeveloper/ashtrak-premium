@@ -155,15 +155,11 @@ message.author.send("اشتراك برميوم للبوت العربي" + `  **
 client.on('message', message => {
      if (message.content === "/help") {
 message.author.send("" + `  **
-
 "اوامر عامة"
-
 /id           / يجيب معلومات حسابك
 /credit       / يطلع لك انت كم معك فلوس
 /level        / يطلع لك لفلك
-
 "اوامر السيرفرات"
-
 /server       / يجيب معلومات السيرفر
 /ban          / يبند لك شخص معين
 /kick         / يعطي كيك لشخص معين
@@ -171,24 +167,17 @@ message.author.send("" + `  **
 /unmute       / يشيل الميوت عن الشخص
 /bc           / لارسال برود كاست 
 /clear        / لحذف جميع الرسائل
-
 "استضافات"
-
 استضافة منع السبام 
-
 "اوامر البوت" 
-
 /bot               / عدد السيرفرات التي تستخدم البوت
 /invite            / لاضافة البوت الى سيرفرك
 /support           / لدخول سيرفر المساعدة الخاص بالبوت
 /contact           / لارسال رسالة الى صاحب البوت
 /website           / لدخول موقع البوت العربي 
-
 "الدعم الفني"
-
 :gear:          https://discord.gg/ZPzcRfu    | سيرفر الدعم 
 :gear:            https://arabicobot.wixsite.com/arabicobot  | موقع البوت
-
 **`);
     }
 });
@@ -618,7 +607,6 @@ client.on('message', message => {
       "\n" + "" + args + "")
   }
   });
-
 
 
 
