@@ -2,6 +2,77 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 client.on('ready',  () => {
   console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'); 
   console.log('CREATED BY : PITAR HIX');
@@ -504,22 +575,6 @@ client.on('message' , message => {
 });
 
 
-var prefix = "/"
-client.on('message', message => {
-
-  if (message.content.startsWith(prefix + "contact")) {
-  if (!message.channel.guild) return;
-  let args = message.content.split(" ").slice(1).join(' ');
-  client.users.get("414870488691769344").send(
-      "\n" + "" + "● السيرفر :" + "" +
-      "\n" + "" + "» " + message.guild.name + "" +
-      "\n" + "" + " ● المرسل : " + "" +
-      "\n" + "" + "» " + message.author.tag + "" +
-      "\n" + "" + " ● الرسالة : " + "" +
-      "\n" + "" + args + "")
-  }
-
-
 client.on('message' , message => {
     if (message.content === "/support") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
@@ -546,6 +601,23 @@ client.on('message' , message => {
   message.channel.sendEmbed(embed);
    }
 });
+
+
+var prefix = "/"
+client.on('message', message => {
+
+  if (message.content.startsWith(prefix + "contact")) {
+  if (!message.channel.guild) return;
+  let args = message.content.split(" ").slice(1).join(' ');
+  client.users.get("414870488691769344").send(
+      "\n" + "" + "● السيرفر :" + "" +
+      "\n" + "" + "» " + message.guild.name + "" +
+      "\n" + "" + " ● المرسل : " + "" +
+      "\n" + "" + "» " + message.author.tag + "" +
+      "\n" + "" + " ● الرسالة : " + "" +
+      "\n" + "" + args + "")
+  }
+  });
 
 
 
