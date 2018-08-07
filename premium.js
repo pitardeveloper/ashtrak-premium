@@ -39,7 +39,7 @@ client.on('ready', () => {
 
 
 client.on("message", msg => {
-           var prefix = "!";
+           var prefix = "$";
   if(msg.content.startsWith (prefix + "id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
@@ -57,6 +57,7 @@ client.on("message", msg => {
       msg.channel.send({embed: embed})
   }
 });
+
 
 
 client.on('message', message => {
@@ -83,9 +84,9 @@ message.author.send("اشتراك برميوم للبوت العربي" + `  **
 client.on('message', message => {
      if (message.content === "!help") {
 message.author.send("" + `  **
-!ping                | سرعة الأتصال
-!id                  | معلومــات عــن حســابــك
-!avatar              | صورتك في الدسكورد
+$ping                | سرعة الأتصال
+$id                  | معلومــات عــن حســابــك
+$avatar              | صورتك في الدسكورد
 تنبيه هام : كود الكرديت قيد التطوير ما تقدر تعطي احد كرديت هو قيد التطوير
 "اوامر السيرفرات" 
 $server                 | معلومات عن السيرفر
