@@ -274,7 +274,6 @@ client.on('message', message => {
     }
 });
 
-aasasdasd
 
 client.on('message', message => {
      if (message.content === "$challenge") {
