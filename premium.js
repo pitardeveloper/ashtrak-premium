@@ -34,7 +34,7 @@ client.on('message', message => {
 
 // playing
 client.on('ready', () => {
-                                                                                                                                                                                                                                                                              client.user.setGame(`【LE】buy ii7MoDxDii`,'https://www.twitch.tv/v5bz');
+                                                                                                                                                                                                                                                                              client.user.setGame(`buy ii7MoDxDii`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -99,7 +99,7 @@ $mute                   | لاعطاء العضو ميوت
 $unmute                 | لفك الميوت عن العضو
 $mutechannel            | لتقفيل الشات
 $unmutechannel          | لفتح الشات
-ct                      | لصناعة روم كتابي
+$ct                      | لصناعة روم كتابي
 $cv                     | لصناعة روم صوتي
 $rooms                  | يطلع لك اسامي وارقام الرومات
 $create server          | صيانة / يسويلك سيرفر كاامل
@@ -940,6 +940,29 @@ client.on('message' , message => {
   message.channel.sendEmbed(embed);
    }
 });
+
+
+client.on("message", (message) => {
+if (message.content.startsWith("$ct")) {
+            if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+        let args = message.content.split(" ").slice(1);
+    message.guild.createChannel(args.join(' '), 'text');
+message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
+
+}
+});
+
+
+client.on("message", (message) => {
+if (message.content.startsWith("$cv")) {
+            if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
+        let args = message.content.split(" ").slice(1);
+    message.guild.createChannel(args.join(' '), 'voice');
+    message.channel.sendMessage('تـم إنـشاء روم صـوتي')
+    
+}
+});
+
 
 
 client.on('guildMemberAdd', member => {
