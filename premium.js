@@ -39,7 +39,7 @@ client.on('ready', () => {
 
 
 client.on("message", msg => {
-           var prefix = "$";
+           var prefix = "$$-";
   if(msg.content.startsWith (prefix + "id")) {
     if(!msg.channel.guild) return msg.reply('**:x: اسف لكن هذا الامر للسيرفرات فقط **');         
       const embed = new Discord.RichEmbed();
@@ -61,7 +61,7 @@ client.on("message", msg => {
 
 
 client.on('message', message => {
-     if (message.content === "$help") {
+     if (message.content === "$$-help") {
 message.author.send("اشتراك برميوم للبوت العربي" + `  **
 ╭━━━╮╱╱╱╱╭╮╱╱╱╱╱╱╱╱╭━━╮╱╱╱╭╮╱╭━━━╮
 ┃╭━╮┃╱╱╱╱┃┃╱╱╱╱╱╱╱╱┃╭╮┃╱╱╭╯╰╮┃╭━╮┃
@@ -84,41 +84,39 @@ message.author.send("اشتراك برميوم للبوت العربي" + `  **
 client.on('message', message => {
      if (message.content === "$help") {
 message.author.send("" + `  **
-$ping                | سرعة الأتصال
-$id                  | معلومــات عــن حســابــك
-$avatar              | صورتك في الدسكورد
+$$-ping                | سرعة الأتصال
+$$-id                  | معلومــات عــن حســابــك
+$$-avatar              | صورتك في الدسكورد
 تنبيه هام : كود الكرديت قيد التطوير ما تقدر تعطي احد كرديت هو قيد التطوير
 "اوامر السيرفرات" 
-$server                 | معلومات عن السيرفر
-$clear                  | لحذف الرسائل
-$create colors          | لصناعة 200 لون
-$delete colors          | لحذف 200 لون
-$kick                   | لطرد الشخص
-$ban                    | لتبنيد الشخص
-$mute                   | لاعطاء العضو ميوت
-$unmute                 | لفك الميوت عن العضو
-$mutechannel            | لتقفيل الشات
-$unmutechannel          | لفتح الشات
-$ct                      | لصناعة روم كتابي
-$cv                     | لصناعة روم صوتي
-$rooms                  | يطلع لك اسامي وارقام الرومات
-$create server          | صيانة / يسويلك سيرفر كاامل
+$$-server                 | معلومات عن السيرفر
+$$-clear                  | لحذف الرسائل
+$$-create colors          | لصناعة 200 لون
+$$-kick                   | لطرد الشخص
+$$-ban                    | لتبنيد الشخص
+$$-mute                   | لاعطاء العضو ميوت
+$$-unmute                 | لفك الميوت عن العضو
+$$-mutechannel            | لتقفيل الشات
+$$-unmutechannel          | لفتح الشات
+$$-ct                      | لصناعة روم كتابي
+$$-cv                     | لصناعة روم صوتي
+$$-rooms                  | يطلع لك اسامي وارقام الرومات
+$$-create server          | صيانة / يسويلك سيرفر كاامل
 "اوامر البوت" 
-$bot               | عدد السيرفرات التي تستخدم البوت
-$invite            | لاضافة البوت الى سيرفرك
-$support           | لدخول سيرفر المساعدة الخاص بالبوت
-$contact           | لارسال رسالة الى صاحب البوت
+$$-bot               | عدد السيرفرات التي تستخدم البوت
+$$-support           | لدخول سيرفر المساعدة الخاص بالبوت
+$$-contact           | لارسال رسالة الى صاحب البوت
 "اوامر العاب"
-$challenges             | لمعرفة ماذا يوجد من تحديات
-$مريم                      | لتلعب لعبة مريم
-$عقاب                        | لتعاقب واحد
-$غرد               | للتغريد الى شخص
-$cat             | يرسلك صورة بسه 
-$صراحة                | الصراحة
-$كت تويت                      | الكت تويت
-$لو خيروك                      | لتلعب لعبة لو خيروك
+$$-challenges             | لمعرفة ماذا يوجد من تحديات
+$$-مريم                      | لتلعب لعبة مريم
+$$-عقاب                        | لتعاقب واحد
+$$-غرد               | للتغريد الى شخص
+$$-cat             | يرسلك صورة بسه 
+$$-صراحة                | الصراحة
+$$-كت تويت                      | الكت تويت
+$$-لو خيروك                      | لتلعب لعبة لو خيروك
 "ديانات"
-$اذكار                    | لقراءة اذكار
+$$-اذكار                    | لقراءة اذكار
 "استضافات"
 استضافة الترحيب : سوي روم باسم welcome
 استضافة اللوق   : سوي روم باسم console
@@ -132,7 +130,7 @@ $اذكار                    | لقراءة اذكار
 
 // -ping
    client.on('message', message => {
-     if (message.content === "$ping") {
+     if (message.content === "$$-ping") {
       const embed = new Discord.RichEmbed()
  
   .setColor("#FF0000")
@@ -144,7 +142,7 @@ $اذكار                    | لقراءة اذكار
  
 
  client.on('message', function(msg) {
-         var prefix = "$"
+         var prefix = "$$-"
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
@@ -166,7 +164,7 @@ $اذكار                    | لقراءة اذكار
 
 
    client.on('message', message => {
-     if (message.content === "$help") {
+     if (message.content === "$$-help") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -198,7 +196,7 @@ client.on('message', message => {
    
 
 client.on("message", message => {
-    var prefix = "$";
+    var prefix = "$$-";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -233,20 +231,6 @@ client.on('message', message => {
 
 
 client.on('message' , message => {
-    if (message.content === "$invite") {
-        if(!message.channel.guild) return message.reply('This Command is Only For Servers');
-     const embed = new Discord.RichEmbed()
- .setColor("RANDOM")
- .setThumbnail(client.user.avatarURL)
- .setAuthor(message.author.username, message.author.avatarURL)
- .setTitle('اظعط هنا لدعوة البوت الى سيرفرك')
- .setURL('https://discordapp.com/oauth2/authorize?client_id=476402973904470017&scope=bot&permissions=2146958847')
-  message.channel.sendEmbed(embed);
-   }
-});
-
-
-client.on('message' , message => {
     if (message.content === "$support") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
      const embed = new Discord.RichEmbed()
@@ -261,12 +245,12 @@ client.on('message' , message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenges") {
+     if (message.content === "$$-challenges") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
   .setColor("#9B59B6")
-	 .addField("الرمز : $ | الامر : chellenge | 7 6 5 4 3 2 1")
+	 .addField("الرمز : $$- | الامر : chellenge | 7 6 5 4 3 2 1")
 	 
 	 
 	 
@@ -276,7 +260,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenge") {
+     if (message.content === "$$-challenge") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -291,7 +275,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenge2") {
+     if (message.content === "$$-challenge2") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -306,7 +290,7 @@ client.on('message', message => {
   
   
 client.on('message', message => {
-     if (message.content === "$challenge3") {
+     if (message.content === "$$-challenge3") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -321,7 +305,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenge4") {
+     if (message.content === "$$-challenge4") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -335,7 +319,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-     if (message.content === "$challenge5") {
+     if (message.content === "$$-challenge5") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -350,7 +334,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenge6") {
+     if (message.content === "$$-challenge6") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -365,7 +349,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-     if (message.content === "$challenge7") {
+     if (message.content === "$$-challenge7") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
@@ -381,7 +365,7 @@ client.on('message', message => {
  
 client.on('message', function(message) {
 if(!message.channel.guild) return;
-if(message.content === '$create colors') {
+if(message.content === '$$-create colors') {
 if(message.member.hasPermission('MANAGE_ROLES')) {
 setInterval(function(){})
 message.channel.send('يتم انشاء 200 لون انتضر | ▶️')
@@ -392,7 +376,7 @@ message.channel.send('ما معاك البرمشن المطلوب |❌🚫')
 });
 
 client.on('message', message=>{
-if (message.content === '$create colors'){
+if (message.content === '$$-create colors'){
 if(!message.channel.guild) return;
 if (message.member.hasPermission('MANAGE_ROLES')){
 setInterval(function(){})
@@ -443,7 +427,7 @@ const cuttweet = [
 
 
 client.on('message', message => {
-    if(message.content === "$bot") {
+    if(message.content === "$$-bot") {
         const embed = new Discord.RichEmbed()
         .setColor("#00FFFF")
         .setDescription(`**السيرفرات**?? **__${client.guilds.size}__**
@@ -455,7 +439,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if (message.content === `$كت تويت`) {
+  if (message.content === `$$-كت تويت`) {
 message.channel.sendMessage({embed: {
   color: 3547003,
   description: `${cuttweet[Math.floor(Math.random() * cuttweet.length)]}`
@@ -527,7 +511,7 @@ const Sra7a = [
 ]
 
    client.on('message', message => {
- if (message.content.startsWith('$صراحة')) {
+ if (message.content.startsWith('$$-صراحة')) {
      if(!message.channel.guild) return message.reply('** This command only for servers **');
   var client= new Discord.RichEmbed()
   .setTitle("لعبة صراحة ..")
@@ -542,7 +526,7 @@ const Sra7a = [
 });
 
 
-  var prefix = "$";
+  var prefix = "$$-";
 var rebel = ["https://f.top4top.net/p_682it2tg6.png","https://e.top4top.net/p_682a1cus5.png","https://d.top4top.net/p_682pycol4.png","https://c.top4top.net/p_682vqehy3.png","https://b.top4top.net/p_682mlf9d2.png","https://a.top4top.net/p_6827dule1.png","https://b.top4top.net/p_682g1meb10.png","https://a.top4top.net/p_682jgp4v9.png","https://f.top4top.net/p_682d4joq8.png","https://e.top4top.net/p_6828o0e47.png","https://d.top4top.net/p_6824x7sy6.png","https://c.top4top.net/p_682gzo2l5.png","https://b.top4top.net/p_68295qg04.png","https://a.top4top.net/p_682zrz6h3.png","https://f.top4top.net/p_6828vkzc2.png","https://e.top4top.net/p_682i8tb11.png"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
@@ -554,7 +538,7 @@ message.channel.sendEmbed(cat);
 });
 
 client.on("message", (message) => {
-if (message.content.startsWith("$ct")) {
+if (message.content.startsWith("$$-ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -565,7 +549,7 @@ message.channel.sendMessage('تـم إنـشاء روم كـتابـي')
 
 
 client.on("message", (message) => {
-if (message.content.startsWith("$cv")) {
+if (message.content.startsWith("$$-cv")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'voice');
@@ -580,7 +564,7 @@ client.on("message", message => {
   
   let command = message.content.split(" ")[0];
   
-  if (command === "$mute") {
+  if (command === "$$-mute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'console');
@@ -616,7 +600,7 @@ return message.reply("**:white_check_mark: .. تم اعطاء العضو ميو�
   
   let command = message.content.split(" ")[0];
   
-  if (command === "$unmute") {
+  if (command === "$$-unmute") {
         if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("** لا يوجد لديك برمشن 'Manage Roles' **").catch(console.error);
   let user = message.mentions.users.first();
   let modlog = client.channels.find('name', 'console');
@@ -659,7 +643,7 @@ client.on('message', message => {
               });
                 }
 //viper
-    if(message.content === prefix + "$unmutechannel") {
+    if(message.content === prefix + "$$-unmutechannel") {
                         if(!message.channel.guild) return message.reply('** This command only for servers**');
 
    if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('**__ليس لديك صلاحيات__**');
@@ -676,7 +660,7 @@ client.on('message', message => {
 });
 
 
-var prefix = "$"
+var prefix = "$$-"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -717,7 +701,7 @@ client.on('message', message => {
  
 
  
-var prefix = "$"
+var prefix = "$$-"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -817,7 +801,7 @@ const Za7f = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("$عقاب")) {
+   if (message.content.startsWith("$$-عقاب")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -829,7 +813,7 @@ const Za7f = [
     }
 });
 
-var prefix = "$"
+var prefix = "$$-"
 client.on('message', message => {
 
   if (message.content.startsWith(prefix + "contact")) {
@@ -847,12 +831,12 @@ client.on('message', message => {
 
 
    client.on('message', message => {
-     if (message.content === "$contact") {
+     if (message.content === "$$-contact") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
                .setFooter(`ArabicoBot`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
   .setColor("#9B59B6")
-  .addField("تم ارسال رسالة لصاحب البوت العربي")
+  .addField("تم ارسال رسالة لصاحب البوت البرميوم")
   
      
      
@@ -862,7 +846,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content === "$rooms") {
+    if (message.content === "$$-rooms") {
         if (message.author.bot) return
                       if (!message.guild) return;
 
@@ -913,7 +897,7 @@ const adkar = [
 ]
 client.on('message', message => {
 if (message.author.bot) return;
-if (message.content.startsWith('$اذكار')) {
+if (message.content.startsWith('$$-اذكار')) {
   if(!message.channel.guild) return;
 var client= new Discord.RichEmbed()
 .setTitle("اذكار")
@@ -928,7 +912,7 @@ message.react("??")
 
 
 client.on('message' , message => {
-    if (message.content === "$website") {
+    if (message.content === "$$-website") {
         if(!message.channel.guild) return message.reply('This Command is Only For Servers');
      const embed = new Discord.RichEmbed()
  .setColor("RANDOM")
