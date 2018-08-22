@@ -167,7 +167,7 @@ $$-اذكار                    | لقراءة اذكار
      if (message.content === "$$-help") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تم ارسال الاوامر في الخاص + تاكد انك فاتح الخاص :]")
 
@@ -210,7 +210,7 @@ client.on("message", message => {
         color: 0x06DF00,
         description: "تم مسح الرسائل بنجاح",
         footer: {
-          text: "KingMc"
+          text: "💙 ↪ World ↩ 💙"
         }
       }}).then(msg => {msg.delete(3000)});
                           }
@@ -248,7 +248,7 @@ client.on('message', message => {
      if (message.content === "$$-challenges") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
 	 .addField("الرمز : $$- | الامر : chellenge | 7 6 5 4 3 2 1")
 	 
@@ -263,7 +263,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("روح عند ابوك واسلخه كف او تروح تاكل 5 ليمونات حامضة")
      
@@ -278,7 +278,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge2") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح عند ابوك وتقله احبك او تروح عند صديقك وتقله انا اكرهك واضربه كف")
      
@@ -293,7 +293,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge3") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح عند اختك وتكذب عليها او تروح عند ابوك تقله بخترقكك عشاني كرهتك")
      
@@ -308,7 +308,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge4") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح على المطبخ وتقشر بصل او تروح الخزانة حقتك وتحرق بنطلون")
      
@@ -322,7 +322,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge5") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح الحمام وتعبي مويا حقته وتعطيه ل اخوك يشربه او تروح عند اخوك وتقله كل زق")
      
@@ -337,7 +337,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge6") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح تاكل شي ما تحبه وتكرهه او تاكل 10 حلاوة معفنة")
      
@@ -352,7 +352,7 @@ client.on('message', message => {
      if (message.content === "$$-challenge7") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-               .setFooter(`KingMc`, 'https://images-ext-2.discordapp.net/external/lrVzKt7T8b5JZz-VcYfH6ICQtHA0Bj8_AXkq_JO2ZX8/https/cdn.discordapp.com/attachments/411548285740908551/411550507363074048/6k0g8EYs.jpg')
+               .setFooter(`💙 ↪ World ↩ 💙`, 'https://cdn.discordapp.com/attachments/478146223589818409/480808730754023435/PicsArt_08-18-05.20.46.png')
   .setColor("#9B59B6")
   .addField("تروح تاكل حبة من البطاطا يلي ياكلها خويك او تخدع اخوك لما يجيب بطاطا تاكله كله")
      
