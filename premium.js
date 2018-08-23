@@ -11,7 +11,7 @@ client.on('ready',  () => {
   console.log('⚙            PITAR : ibarmoda');
 client.user.setStatus("dnd");
 });
-                                                                                                                                                                                              var prefix = "";
+                                                                                                                                                                                              var prefix = "$$-";
 
 client.on('message', message => {
   if (message.author.bot) return;
