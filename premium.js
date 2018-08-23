@@ -34,7 +34,7 @@ client.on('message', message => {
 
 // playing
 client.on('ready', () => {
-                                                                                                                                                                                                                                                                              client.user.setGame(`RobbieE`,'https://www.twitch.tv/v5bz');
+                                                                                                                                                                                                                                                                              client.user.setGame(`buy ii7MoDxDii`,'https://www.twitch.tv/v5bz');
 });
 
 
